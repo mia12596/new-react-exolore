@@ -1,35 +1,75 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+// import { useState } from 'react'
+// import './App.css'
+// import Blogs from './assets/components/Blogs/Blogs'
+// import Bookmarks from './assets/components/Bookmarks/Bookmarks'
+// import Header from './assets/components/Header/Header'
+
+
+// function App() {
+//   const [bookmark, setBookmark] = useState([]);
+//   function bookMark(blog) {
+//     if (bookmark.length >= 8) {
+//       alert('You can only bookmark up to 8 blogs.');
+//       return;
+//     }
+//     // Prevent duplicates
+//     if (bookmark.some(b => b.id === blog.id)) {
+//       alert('This blog is already bookmarked.');
+//       return;
+//     }
+//     const newBookmark = [...bookmark, blog];
+//     setBookmark(newBookmark);
+//   }
+
+//   return (
+//     <>
+
+//       <Header></Header>
+//       <div className='md:flex p-5'>
+//         <Blogs bookMark={bookMark}></Blogs>
+//         <Bookmarks bookmark={bookmark}></Bookmarks>
+//       </div>
+
+//     </>
+//   )
+// }
+
+// export default App
+
+import { useState } from 'react';
+import './App.css';
+import Blogs from './assets/components/Blogs/Blogs';
+import Bookmarks from './assets/components/Bookmarks/Bookmarks';
+import Header from './assets/components/Header/Header';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [bookmark, setBookmark] = useState([]);
+  const limit = 6; // Static maximum limit
+
+  function bookMark(blog) {
+    if (bookmark.length >= limit) {
+      alert('You can only bookmark up to 6 blogs.');
+      return;
+    }
+    if (bookmark.some(b => b.id === blog.id)) {
+      alert('This blog is already bookmarked.');
+      return;
+    }
+    const newBookmark = [...bookmark, blog];
+    setBookmark(newBookmark);
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Header />
+      <div className="md:flex p-5">
+        <Blogs bookMark={bookMark} />
+        <Bookmarks bookmark={bookmark} limit={limit} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+

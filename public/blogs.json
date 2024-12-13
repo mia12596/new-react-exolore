@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "date": "2024-12-01",
+        "cover": "https://images.unsplash.com/photo-1506748686211-4a798fc6e389?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        "title": "Fresh Vegetables Assortment",
+        "author": "John Doe",
+        "author_image": "https://randomuser.me/api/portraits/men/10.jpg",
+        "reading_time": "5 min",
+        "hashtags": [
+            "#vegetables",
+            "#health",
+            "#nutrition"
+        ],
+        "posted_date": "2024-12-01T08:00:00Z"
+    },
+    {
+        "id": 2,
+        "date": "2024-12-02",
+        "cover": "https://images.unsplash.com/photo-1447175008436-054170c2e979?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        "title": "Organic Vegetables on Wooden Table",
+        "author": "Jane Smith",
+        "author_image": "https://randomuser.me/api/portraits/women/1.jpg",
+        "reading_time": "8 min",
+        "hashtags": [
+            "#vegetables",
+            "#organic",
+            "#nutrition"
+        ],
+        "posted_date": "2024-12-02T10:30:00Z"
+    },
+    {
+        "id": 3,
+        "date": "2024-12-03",
+        "cover": "https://images.unsplash.com/photo-1506806732259-39c2d0268443?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        "title": "Vegetables in a Basket",
+        "author": "Alex Brown",
+        "author_image": "https://randomuser.me/api/portraits/men/2.jpg",
+        "reading_time": "12 min",
+        "hashtags": [
+            "#farm",
+            "#vegetables",
+            "#basket"
+        ],
+        "posted_date": "2024-12-03T12:15:00Z"
+    },
+    {
+        "id": 4,
+        "date": "2024-12-04",
+        "cover": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        "title": "Fresh Veggies Market",
+        "author": "Emily Clark",
+        "author_image": "https://randomuser.me/api/portraits/women/2.jpg",
+        "reading_time": "15 min",
+        "hashtags": [
+            "#vegetables",
+            "#market",
+            "#fresh"
+        ],
+        "posted_date": "2024-12-04T14:45:00Z"
+    },
+    {
+        "id": 5,
+        "date": "2024-12-05",
+        "cover": "https://images.unsplash.com/photo-1506806732259-39c2d0268443?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        "title": "Healthy Vegetable Platter",
+        "author": "Chris Taylor",
+        "author_image": "https://randomuser.me/api/portraits/men/3.jpg",
+        "reading_time": "6 min",
+        "hashtags": [
+            "#health",
+            "#vegetables",
+            "#nutrition"
+        ],
+        "posted_date": "2024-12-05T09:00:00Z"
+    }
+]
